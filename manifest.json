@@ -2,17 +2,31 @@
   "manifest_version": 3,
   "name": "Volume",
   "version": "0.1.0",
-
   "description": "Controls volume on each tab.",
-
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "volume-control@gemini.cli",
+      "strict_min_version": "109.0"
+    }
+  },
   "icons": {
     "48": "icons/volume.png"
   },
-
+  "permissions": ["activeTab", "storage", "tabs"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/volume.png"
+    }
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["volume.js"]
+      "js": ["volume.js"],
+      "run_at": "document_start"
     }
   ]
 }

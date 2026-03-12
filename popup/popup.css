@@ -1,0 +1,94 @@
+body {
+    width: 200px;
+    padding: 10px;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.slider-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#volume-display {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.controls-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.shortcut-btn {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 8px 2px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    transition: background 0.2s;
+}
+
+.shortcut-btn:hover {
+    background: #f0f0f0;
+}
+
+.shortcut-btn.icon-btn {
+    background: #0078d4;
+    color: white;
+    border-color: #0078d4;
+}
+
+.shortcut-btn.icon-btn.muted {
+    background: #d13438;
+    border-color: #d13438;
+}
+
+.shortcut-btn.icon-btn:hover {
+    opacity: 0.9;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #444;
+}
+
+.toggle-container input {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.toggle-container label {
+    cursor: pointer;
+}
