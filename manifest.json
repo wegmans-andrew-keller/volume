@@ -10,7 +10,7 @@
     }
   },
   "icons": {
-    "48": "icons/volume.png"
+    "32": "icons/volume.png"
   },
   "permissions": ["activeTab", "storage", "tabs"],
   "background": {
@@ -19,7 +19,7 @@
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": {
-      "48": "icons/volume.png"
+      "32": "icons/volume.png"
     }
   },
   "content_scripts": [
