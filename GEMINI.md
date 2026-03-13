@@ -30,3 +30,9 @@
 - **Slider Range:** Configured from `0` to `400` in `popup.html`.
 - **Smoothing:** `gainNode.gain.setTargetAtTime` is used for smooth volume transitions and to avoid audible "clicks" during rapid slider movement.
 - **Resiliency:** Added a `play` event listener to media elements to attempt audio graph setup only when playback starts, which helps bypass some browser restrictions on early `AudioContext` initialization.
+
+## Compliance & Privacy
+
+- **Firefox Built-in Data Consent:** Starting November 3, 2025, extensions must declare their data collection intentions in the manifest under `browser_specific_settings.gecko.data_collection_permissions`.
+- **Zero Data Collection:** If an extension does not transmit or collect data outside the local browser, the `required` permission must be explicitly set to `["none"]`. This builds user trust and fulfills the Firefox mandatory disclosure policy.
+- **Local Storage Exception:** Data stored in `browser.storage.local` that never leaves the user's browser is not considered "data transmission" under current Firefox policies.
